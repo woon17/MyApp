@@ -13,6 +13,7 @@ const ListItem = ({ contact, onPress }) => {
   return (
     <TouchableHighlight
       onPress={onPress}
+      underlayColor={colors.rowUnderlay}
     >
       <View style={styles.row}>
         <Image
