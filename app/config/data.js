@@ -68,8 +68,8 @@ export const contacts = [
             value: null,
         },
         picture: {
-            large: 'https://randomuser.me/api/portraits/women/22.jpg',
-            medium: 'https://randomuser.me/api/portraits/med/women/22.jpg',
+            large: 'https://simg.nicepng.com/png/small/151-1510639_netflix-app-icon-png.png',
+            medium: 'https://simg.nicepng.com/png/small/151-1510639_netflix-app-icon-png.png',
             thumbnail: 'https://simg.nicepng.com/png/small/151-1510639_netflix-app-icon-png.png',
         },
         nat: 'DE',
