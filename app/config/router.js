@@ -60,7 +60,8 @@ const Stack = createStackNavigator();
 
 export default function MyStack() {
     return (
-        <Stack.Navigator screenOptions={{ headerTitleAlign: 'center' }}>
+        // <Stack.Navigator screenOptions={{ headerTitleAlign: 'center' }}>
+        <Stack.Navigator>
             {/* <Stack.Screen name="Home" component={HomeScreen} /> */}
             <Stack.Screen name="Home" component={Contacts} />
             {/* <Stack.Screen name="Notifications" component={NotificationsScreen} />
@@ -69,7 +70,7 @@ export default function MyStack() {
             `${capitalizeFirstLetter(navigation.state.params.name.first)} ${capitalizeFirstLetter(navigation.state.params.name.last)}`
             <Stack.Screen name="Details" component={DetailsScreen} /> */}
             {/* <Stack.Screen name="Details" component={Details} options={({ route }) => ({ title: (route.params.currContact.name.first) })} /> */}
-            <Stack.Screen name="Details" component={Details} options={({ route }) => ({ headerTitle: capitalizeFirstLetter(route.params.currContact.name.first) + ' ' + capitalizeFirstLetter(route.params.currContact.name.last) })} />
+            <Stack.Screen name="Details" component={Details} options={({ route }) => ({ headerTitle: `${capitalizeFirstLetter(route.params.currContact.name.first)} ${capitalizeFirstLetter(route.params.currContact.name.last)}` })} />
         </Stack.Navigator>
     );
 }
